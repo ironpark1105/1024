@@ -1,0 +1,151 @@
+/* style.css */
+:root {
+    --main-color: #0066CC;
+    --text-color: #333;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text-color);
+    font-size: 18px; 
+    font-weight: 400;
+  }
+  
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .top-menu {
+    background: var(--main-color);
+    text-align: right;
+    padding: 10px 0;
+    font-size: 14px;
+    min-width: 1200px;
+  }
+  
+  .top-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .top-menu ul li a {
+    color: #fff;
+  }
+  
+  #main-header {
+      border-bottom: 1px solid #ccc;
+  }
+  #main-header .header-box {
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #main-header .header-box h1 {
+    position: absolute;
+    left: 0;
+    top: 17px;
+  }
+  
+  #main-header .search {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .search{
+      position: absolute;
+      right: 0;
+      top: 28px;
+  }
+  
+  .search .fa{
+    font-size: 24px;
+  }
+  
+  /* gnb */
+  #gnb {
+    display: inline-block;
+    margin-top: 30px;
+  }
+  
+  #gnb > .depth1 {
+    display: flex;
+  }
+  
+  #gnb > .depth1 > li {
+    width: 100px;
+  }
+  
+  #gnb .depth2 {
+    padding: 30px 0;
+    margin-top: 25px;
+    background: #ddd;
+    display: none;
+  }
+  
+  #gnb .depth2 > li > a {
+    display: block;
+    padding: 6px 0;
+  }
+
+
+
+  #search-popup{
+      border: 1px solid #ccc;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background: #ccc;
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+  }
+  
+  
+  #search-popup input[type=search]{
+      height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #btn-search{
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+  }
+  #btn-close{
+      position: absolute;
+      right: 0;
+      padding: 5px;
+  }
+
+  #search-popup .container{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
